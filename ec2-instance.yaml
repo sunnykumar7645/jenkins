@@ -1,7 +1,7 @@
-# Parameters:
-#   SecurityGroupDescription:
-#     Description: SecurityGroupDescription
-#     Type: String
+Parameters:
+  SecurityGroupDescription:
+    Description: SecurityGroupDescription
+    Type: String
 Resources:
   MyInstance:
     Type: AWS::EC2::Instance
@@ -34,7 +34,7 @@ Resources:
   SecurityGroupMu1:
     Type: AWS::EC2::SecurityGroup
     Properties:
-      # GroupDescription: !Ref SecurityGroupDescription
+      GroupDescription: !Ref SecurityGroupDescription
       SecurityGroupIngress:
         - IpProtocol: tcp
           FromPort: 22
