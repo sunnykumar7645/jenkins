@@ -8,8 +8,6 @@ Resources:
     Properties:
       ImageId: ami-057752b3f1d6c4d6c
       InstanceType: t2.micro
-      Placement:
-        AvailabilityZone: ap-south-1
       Tags:
         - Key: Name
           Value: cloudformation19
